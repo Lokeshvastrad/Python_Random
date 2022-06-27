@@ -1,0 +1,11 @@
+def get_row_col(s):
+    d={'A':0, 'B': 1, 'C':2}
+    letter = s[0]
+    number = s[1]
+    row = int(number)-1
+    column = d[letter]
+
+    return (row,column)
+
+
+print(get_row_col('B3'))
